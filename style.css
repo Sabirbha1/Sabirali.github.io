@@ -1,0 +1,327 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat%3A700%7CSource%20Sans%20Pro%3A400%7CYesteryear%3A400&subset=latin%2Clatin-ext&display=swap]);
+* {
+    margin: 0;
+    Padding: 0;
+    box-sizing: border-box;
+     /* font-family: 'Montserrat'; */
+    /* font-family: 'Yesteryear';  */
+}
+
+:root{
+    --primary-font-family: 'Montserrat';
+    --secondry-font-family: 'Yesteryear';
+    --content-font-family: Source Sans Pro, sans-serif;
+
+
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.navbar{
+    padding: 50px 30px;
+    font-family: var(--primary-font-family);
+}
+.landingSection{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.086) url(img/rosa-1-rosa-hero-background.jpg);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navLists{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.navLists .left a, .navLists .right a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.navLists .right a::before,.navLists .left a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    background-color: white;
+    width: 100%;
+    height: 3.2px;
+    transition: transform .4s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+.navLists a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.navLists li{
+    padding: 0 20px;
+}
+.logo li a{
+    font-size: 41px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+.navLists .left, .navLists .right{
+    display: flex;
+}
+#hero-section>svg{
+    background-color: transparent;
+    color: #DDAB5D;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#hero-section .container{
+    text-align: center;
+}
+#hero-section .container .heading1{
+    color: #DDAB5D;
+    font-size: 105px;
+    font-family: var(--secondry-font-family);
+}
+.heading1{
+    color: #DDAB5D;
+    font-size: 105px;
+    font-family: var(--secondry-font-family);
+
+}
+#hero-section .container .heading2{
+    color: white;
+    font-family: var(--primary-font-family);
+    font-size: 120px;
+    margin-top: -60px;
+}
+#hero-section .container>p{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 20px 0;
+    font-family: var(--content-font-family);
+}
+#hero-section .container .bottom-text{
+    font-size: 27px;
+    font-family: var(--primary-font-family);
+    font-weight: 700;
+}
+.bottom-arrow svg{
+    position: relative;
+    fill: white;
+    top: 90px;
+}
+.bottom-arrow::before{
+    content: "";
+    position: absolute;
+    top: 96.5%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    z-index: 999;
+    border: 2px solid;
+    color: #000;
+    border-left: 0;
+    border-top: 0;
+    -webkit-transform: translate(-50%, -70%) rotate(45deg);
+    transform: translate(-50%, -70%) rotate(45deg);
+}
+
+
+.first-section .container{
+    display: flex;
+    margin: 70px 0;
+    justify-content: space-between;
+    padding: 50px 7%;
+    text-align: center;
+}
+.container .right img{
+    max-width: 320px;
+    height: 620px;
+    padding: 0 8.5px;
+    object-fit: cover;
+}
+.container .left{
+    padding: 100px 0px 0px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left .heading2{
+    font-size: 70px;
+    font-family: var(--primary-font-family);
+    color: #34394B;
+    margin-top: -50px;
+}
+.container .left svg{
+    margin: 30px 0;
+    color: gray;
+}
+.container .left p{
+    max-width: 550px;
+    font-size: 17px;
+    font-family: var(--content-font-family);
+    color: #34394B;
+}
+.container .left a{
+    margin: 25px 0;
+    font-size: 20px;
+    font-family: var(--primary-font-family);
+    color: #DDAB5D;
+    position: relative;
+    text-decoration: none;
+}
+
+.container .left a::before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 2.3px;
+    background-color: #DDAB5D;
+    left: 0;
+    bottom: -3px;
+    transform: scaleX(0);
+    transition: transform .3s;
+    transform-origin: right;
+}
+.container .left a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.second-section{
+    background: rgba(0, 0, 0, 0.06) url(img/rosa-1-frontpage-menu.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.second-section .second-section-content{
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+
+.heading1-second-section{
+    font-size: 93px;
+    color: #DDAB5D;
+    font-family: var(--secondry-font-family);
+}
+.heading2-second-section{
+    font-size: 69px;
+    color: #fff;
+    font-family: var(--primary-font-family);
+    margin-top: -40px;
+}
+#third-section{
+    margin: 50px 0;
+    padding: 50px 0;
+
+}
+#third-section .third-section-container{
+    display: flex;
+    padding: 0 8%;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+.third-section-container>.left{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 60%;
+    gap: 20px;
+}   
+.third-section-container>.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    /* padding: 120px 120px; */
+    width: 60%;
+}
+
+#third-section .third-section-container img{
+    max-width: 300px;   
+    height: 300px;
+    object-fit: cover;
+}
+.third-section-container .third-section-heading1{
+    font-family: var(--secondry-font-family);
+    font-size: 95px;
+    color: #DDAB5D;
+}
+.third-section-container .third-section-heading2{
+    color: #34394B;
+    font-size: 67px;
+    margin-top: -35px;
+    font-family: var(--primary-font-family);
+}
+.third-section-container .right svg{
+    margin: 27px 0;
+    color: gray;
+}
+.third-section-container .right p{
+    color: #34394B;
+    font-family: var(--content-font-family);
+    max-width: 500px;
+    font-size: 16.05px;
+
+}
+.third-section-container .right a{
+    padding: 30px 0px 0px 0px;
+    text-decoration: none;
+    font-size: 19.5px;
+    color: #DDAB5D;
+    font-family: var(--primary-font-family);
+    position: relative;
+}
+.third-section-container .right a::before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 2.5px;
+    background-color: #DDAB5D;
+    left: 0;
+    bottom: -3px;
+    transform: scaleX(0);
+    transition: transform .3s;
+    transform-origin: right;
+}
+.third-section-container .right a:hover:before{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.z-index{
+    position: relative;
+    z-index: 999;
+}
+.fourth-section{
+    background-image: url(img/rosa-1-make-a-reservation.jpg);
+}
+
+footer{
+    height: 120px;
+    background-color: #212B49;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer span, a{
+    color: white;
+    font-size: 18px;
+    font-family: var(--primary-font-family);
+}
